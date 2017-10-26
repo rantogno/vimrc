@@ -1,4 +1,4 @@
-function MyTabLine()
+function! MyTabLine()
   let s = ''
   for i in range(tabpagenr('$'))
     " select the highlighting
@@ -26,7 +26,7 @@ function MyTabLine()
   return s
 endfunction
 
-function MyTabLabel(n)
+function! MyTabLabel(n)
   let buflist = tabpagebuflist(a:n)
   let winnr = tabpagewinnr(a:n)
   let bname = bufname(buflist[winnr - 1])

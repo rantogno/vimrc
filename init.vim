@@ -135,6 +135,8 @@ nmap <F8> :setlocal nolist ts=8 sw=8 sts=8 noet cindent autoindent <enter>
 "better shortcut for changing to and from previous tab
 nnoremap <A-i> gt
 nnoremap <A-u> gT
+
+" Configuring the :terminal
 if has('nvim')
     tnoremap <A-i> <C-\><C-n>gt
     tnoremap <A-u> <C-\><C-n>gT
@@ -144,6 +146,12 @@ if has('nvim')
 
     command! -nargs=* T rightbelow split | terminal <args>
     command! -nargs=* VT rightbelow vsplit | terminal <args>
+    command! -nargs=* TT tab split | terminal <args>
+
+    augroup nvimterm
+        autocmd TermOpen * setlocal norelativenumber nonumber | startinsert
+        autocmd WinEnter term://* startinsert
+    augroup END
 endif
 
 set tabline=%!MyTabLine()

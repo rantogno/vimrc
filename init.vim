@@ -154,6 +154,14 @@ if has('nvim')
     augroup END
 endif
 
+function! CursorLineFunc()
+    hi CursorLine cterm=NONE ctermbg=darkred ctermfg=white guibg=darkred guifg=white
+    setlocal cursorline
+endfunction
+
+command! -nargs=0 CursorLine call CursorLineFunc()
+command! -nargs=0 NoCursorLine set nocursorline
+
 set tabline=%!MyTabLine()
 
 " let g:airline_powerline_fonts = 1

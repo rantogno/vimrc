@@ -90,10 +90,6 @@ if has('nvim')
     tnoremap <A-l> <C-\><C-n><C-w>l
 endif
 
-" EasyMotion
-" nmap s <Plug>(easymotion-s)
-" vmap s <Plug>(easymotion-s)
-
 " Better navigation on long lines
 nnoremap j gj
 nnoremap k gk

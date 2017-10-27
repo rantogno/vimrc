@@ -167,8 +167,6 @@ command! -nargs=0 NoCursorLine set nocursorline
 
 set tabline=%!MyTabLine()
 
-" let g:airline_powerline_fonts = 1
-
 let wiki = {}
 let wiki.path = '~/vimwiki/'
 let wiki.nested_syntaxes = {

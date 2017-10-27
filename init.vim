@@ -154,6 +154,9 @@ if has('nvim')
     augroup END
 endif
 
+abbreviate rbme Reviewed-by: Rafael Antognolli <rafael.antognolli@intel.com>
+abbreviate tbme Tested-by: Rafael Antognolli <rafael.antognolli@intel.com>
+
 function! CursorLineFunc()
     hi CursorLine cterm=NONE ctermbg=darkred ctermfg=white guibg=darkred guifg=white
     setlocal cursorline

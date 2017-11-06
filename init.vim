@@ -24,7 +24,7 @@ filetype plugin indent on
 colorscheme iceberg
 
 " my default indentation
-set sw=4 ts=4 sts=4 et
+set sw=3 ts=3 sts=3 et
 set cino=(0W1st0
 set smarttab
 

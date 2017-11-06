@@ -21,6 +21,7 @@ set mouse=
 " syntax highlight on
 syntax on
 filetype plugin indent on
+colorscheme iceberg
 
 " my default indentation
 set sw=4 ts=4 sts=4 et

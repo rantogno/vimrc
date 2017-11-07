@@ -151,7 +151,6 @@ if has('nvim')
 
     augroup nvimterm
         autocmd TermOpen * setlocal norelativenumber nonumber | startinsert
-        autocmd WinEnter term://* startinsert
     augroup END
 endif
 

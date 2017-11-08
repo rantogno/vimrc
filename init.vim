@@ -21,7 +21,7 @@ set mouse=
 " syntax highlight on
 syntax on
 filetype plugin indent on
-colorscheme iceberg
+hi! Search ctermbg=236
 
 " my default indentation
 set sw=3 ts=3 sts=3 et

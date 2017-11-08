@@ -31,7 +31,6 @@ Plug 'tpope/vim-commentary'
 Plug 'tpope/vim-dispatch'
 Plug 'airblade/vim-gitgutter'
 Plug 'mhinz/neovim-remote'
-Plug 'cocopon/iceberg.vim'
 
 " All of your Plugins must be added before the following line
 filetype plugin indent on    " required

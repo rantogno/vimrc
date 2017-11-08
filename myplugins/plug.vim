@@ -32,6 +32,7 @@ Plug 'tpope/vim-dispatch'
 Plug 'airblade/vim-gitgutter'
 Plug 'mhinz/neovim-remote'
 Plug 'guns/xterm-color-table.vim'
+Plug 'cocopon/iceberg.vim'
 
 " All of your Plugins must be added before the following line
 filetype plugin indent on    " required

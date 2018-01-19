@@ -114,9 +114,8 @@ nnoremap <leader>vl :source $MYVIMRC<CR>
 nmap <leader>ma :make<CR>
 nmap <leader>mi :make install<CR>
 
-" FIXME: Change this to a <Leader> sequence.
-nmap <F1> :bp <enter>
-nmap <F2> :bn <enter>
+nnoremap <S-Tab> :bp <enter>
+nnoremap <Tab> :bn <enter>
 
 nmap <F5> :!ctags -f tags --append --tag-relative -R --c-kinds=+p --fields=+S . <CR>
 nmap <F6> :!rm tags <CR>

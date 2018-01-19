@@ -122,6 +122,7 @@ nmap <F6> :!rm tags <CR>
 
 nmap <Leader>txt :setlocal nocindent tw=72 nolist<CR>
 nmap <Leader>cso :setlocal noet nolist ts=8 sw=8 sts=8<CR>
+nmap <Leader>sw4 :setlocal et list ts=4 sw=4 sts=4<CR>
 
 "setting mesa indent
 nmap <F9> :setlocal ts=3 sw=3 sts=3 et autoindent cindent <enter>

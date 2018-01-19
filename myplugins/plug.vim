@@ -34,6 +34,8 @@ Plug 'mhinz/neovim-remote'
 Plug 'guns/xterm-color-table.vim'
 Plug 'cocopon/iceberg.vim'
 
+Plug 'junegunn/gv.vim'
+
 " All of your Plugins must be added before the following line
 filetype plugin indent on    " required
 call plug#end()            " required

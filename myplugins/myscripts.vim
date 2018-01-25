@@ -54,3 +54,23 @@ function! <SID>BufcloseCloseIt()
      execute("bdelete! ".l:currentBufNum)
    endif
 endfunction
+
+command! TermModeSave call <SID>TermModeSaveIt()
+function! <SID>TermModeSaveIt()
+   let b:mytermmode = 1
+endfunction
+
+command! TermModeRestore call <SID>TermModeRestoreIt()
+function! <SID>TermModeRestoreIt()
+   if !exists("b:mytermmode")
+      return
+   endif
+
+   let l:mytermmode = b:mytermmode
+   unlet b:mytermmode
+
+   if l:mytermmode == 1
+      startinsert
+      return
+   endif
+endfunction

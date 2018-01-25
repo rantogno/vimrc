@@ -21,7 +21,7 @@ call plug#begin('~/.config/nvim/plugged')
 " Plugin 'VundleVim/Vundle.vim'
 
 " Plugins
-Plug 'bling/vim-airline'
+" Plug 'bling/vim-airline'
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 Plug 'junegunn/fzf.vim'
 Plug 'embear/vim-localvimrc'

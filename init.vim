@@ -150,7 +150,7 @@ if has('nvim')
     command! -nargs=* TT tab split | terminal <args>
 
     augroup nvimterm
-        autocmd TermOpen * setlocal norelativenumber nonumber | startinsert
+        autocmd TermOpen * setlocal norelativenumber nonumber matchpairs= | startinsert
         autocmd WinEnter term://* startinsert
     augroup END
 endif

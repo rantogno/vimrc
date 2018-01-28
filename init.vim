@@ -85,10 +85,10 @@ inoremap <A-l> <ESC><C-w>l
 
 " Easy window navigation from terminal mode
 if has('nvim')
-    tnoremap <silent> <A-h> <C-\><C-n>:TermModeSave<CR><C-w>h
-    tnoremap <silent> <A-j> <C-\><C-n>:TermModeSave<CR><C-w>j
-    tnoremap <silent> <A-k> <C-\><C-n>:TermModeSave<CR><C-w>k
-    tnoremap <silent> <A-l> <C-\><C-n>:TermModeSave<CR><C-w>l
+    tnoremap <A-h> <C-\><C-n><C-w>h
+    tnoremap <A-j> <C-\><C-n><C-w>j
+    tnoremap <A-k> <C-\><C-n><C-w>k
+    tnoremap <A-l> <C-\><C-n><C-w>l
 endif
 
 " Better navigation on long lines
@@ -139,8 +139,8 @@ nnoremap <A-u> gT
 
 " Configuring the :terminal
 if has('nvim')
-    tnoremap <silent> <A-i> <C-\><C-n>:TermModeSave<CR>gt
-    tnoremap <silent> <A-u> <C-\><C-n>:TermModeSave<CR>gT
+    tnoremap <A-i> <C-\><C-n>gt
+    tnoremap <A-u> <C-\><C-n>gT
 
     " leave the terminal more easily
     tnoremap <C-h> <C-\><C-n>
@@ -150,8 +150,9 @@ if has('nvim')
     command! -nargs=* TT tab split | terminal <args>
 
     augroup nvimterm
+        au!
         autocmd TermOpen * setlocal norelativenumber nonumber matchpairs= | startinsert
-        autocmd WinEnter term://* TermModeRestore
+        autocmd BufEnter term://* TermModeRestore
     augroup END
 endif
 

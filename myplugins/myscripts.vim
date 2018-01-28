@@ -57,20 +57,20 @@ endfunction
 
 command! TermModeSave call <SID>TermModeSaveIt()
 function! <SID>TermModeSaveIt()
-   let b:mytermmode = 1
+   if exists("b:mytermmode")
+      unlet b:mytermmode
+      echo "startinsert enabled when entering term buffer"
+   else
+      let b:mytermmode = 1
+      echo "startinsert disabled when entering term buffer"
+   endif
 endfunction
 
 command! TermModeRestore call <SID>TermModeRestoreIt()
 function! <SID>TermModeRestoreIt()
-   if !exists("b:mytermmode")
+   if exists("b:mytermmode")
       return
    endif
 
-   let l:mytermmode = b:mytermmode
-   unlet b:mytermmode
-
-   if l:mytermmode == 1
-      startinsert
-      return
-   endif
+   startinsert
 endfunction

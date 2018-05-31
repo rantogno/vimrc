@@ -33,6 +33,7 @@ Plug 'airblade/vim-gitgutter'
 Plug 'mhinz/neovim-remote'
 Plug 'guns/xterm-color-table.vim'
 Plug 'cocopon/iceberg.vim'
+Plug 'easymotion/vim-easymotion'
 
 Plug 'junegunn/gv.vim'
 

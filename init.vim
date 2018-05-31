@@ -45,9 +45,6 @@ set hidden
 
 set laststatus=2
 
-set number
-set relativenumber
-
 " highlight OverLength ctermbg=red ctermfg=white guibg=red guifg=white
 " match Overlength '\%>80v.\+'
 

@@ -179,3 +179,5 @@ let g:fugitive_repo_cwd=1
 let g:localvimrc_persistent=1
 
 let $FZF_DEFAULT_OPTS .= ' --no-height'
+
+nmap s <Plug>(easymotion-s)

@@ -181,4 +181,4 @@ let g:localvimrc_persistent=1
 
 let $FZF_DEFAULT_OPTS .= ' --no-height'
 
-nmap s <Plug>(easymotion-s)
+nmap S <Plug>(easymotion-s)

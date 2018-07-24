@@ -21,7 +21,9 @@ set mouse=
 " syntax highlight on
 syntax on
 filetype plugin indent on
-hi! Search ctermbg=236
+set bg=dark
+" hi! Search ctermbg=236
+hi! Special ctermfg=217 guifg=Orange
 
 " my default indentation
 set sw=3 ts=3 sts=3 et
@@ -35,7 +37,6 @@ set cindent
 set autoindent
 
 set incsearch
-set nohlsearch
 
 set tags=./tags,tags
 set cscopetag

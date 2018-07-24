@@ -182,3 +182,6 @@ let g:localvimrc_persistent=1
 let $FZF_DEFAULT_OPTS .= ' --no-height'
 
 nmap S <Plug>(easymotion-s)
+
+set updatetime=200
+

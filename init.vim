@@ -150,7 +150,6 @@ if has('nvim')
     augroup nvimterm
         au!
         autocmd TermOpen * setlocal norelativenumber nonumber matchpairs= | startinsert
-        autocmd BufEnter term://* TermModeRestore
     augroup END
 endif
 

@@ -55,18 +55,24 @@ function! <SID>BufcloseCloseIt()
    endif
 endfunction
 
-command! TermModeSave call <SID>TermModeSaveIt()
-function! <SID>TermModeSaveIt()
+command! TermModeToggle call <SID>TermModeToggleIt()
+function! <SID>TermModeToggleIt()
    if exists("b:mytermmode")
       unlet b:mytermmode
-      echo "startinsert enabled when entering term buffer"
+      echo "startinsert ENABLED when entering term buffer"
    else
       let b:mytermmode = 1
-      echo "startinsert disabled when entering term buffer"
+      echo "startinsert DISABLED when entering term buffer"
    endif
 endfunction
 
-command! TermModeRestore call <SID>TermModeRestoreIt()
+if has('nvim')
+   augroup nvimterm_mode
+      au!
+      autocmd BufEnter term://* call <SID>TermModeRestoreIt()
+   augroup END
+endif
+
 function! <SID>TermModeRestoreIt()
    if exists("b:mytermmode")
       return

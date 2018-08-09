@@ -21,9 +21,9 @@ set mouse=
 " syntax highlight on
 syntax on
 filetype plugin indent on
-set bg=dark
-" hi! Search ctermbg=236
-hi! Special ctermfg=217 guifg=Orange
+" set bg=dark
+hi Search ctermfg=NONE ctermbg=236
+" hi! Special ctermfg=217 guifg=Orange
 
 " my default indentation
 set sw=3 ts=3 sts=3 et

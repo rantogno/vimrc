@@ -153,13 +153,8 @@ if has('nvim')
     augroup END
 endif
 
-function! CursorLineFunc()
-    hi CursorLine cterm=NONE ctermbg=darkred ctermfg=white guibg=darkred guifg=white
-    setlocal cursorline
-endfunction
-
-command! -nargs=0 CursorLine call CursorLineFunc()
-command! -nargs=0 NoCursorLine set nocursorline
+ hi CursorLine cterm=NONE ctermbg=000 guibg=darkred guifg=white
+ setlocal cursorline
 
 set tabline=%!MyTabLine()
 

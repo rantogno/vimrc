@@ -21,8 +21,8 @@ set mouse=
 " syntax highlight on
 syntax on
 filetype plugin indent on
-" set bg=dark
-hi Search ctermfg=NONE ctermbg=236
+set bg=light
+hi Search ctermfg=NONE ctermbg=yellow
 " hi! Special ctermfg=217 guifg=Orange
 
 " my default indentation
@@ -158,7 +158,7 @@ if has('nvim')
     augroup END
 endif
 
- hi CursorLine cterm=NONE ctermbg=000 guibg=darkred guifg=white
+ hi CursorLine cterm=NONE ctermbg=lightgrey guibg=darkred guifg=white
  set cursorline
 
 set tabline=%!MyTabLine()

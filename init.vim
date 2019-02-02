@@ -42,7 +42,7 @@ set tags=./tags,tags
 set cscopetag
 
 " allow to hide buffers with changes not written to file
-set hidden
+set nohidden
 
 set laststatus=2
 

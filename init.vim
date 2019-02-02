@@ -159,7 +159,7 @@ if has('nvim')
 endif
 
  hi CursorLine cterm=NONE ctermbg=000 guibg=darkred guifg=white
- setlocal cursorline
+ set cursorline
 
 set tabline=%!MyTabLine()
 

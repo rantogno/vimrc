@@ -52,6 +52,11 @@ set laststatus=2
 " highlight RedundantSpaces term=standout ctermbg=red guibg=red
 " match RedundantSpaces /\s\+$\| \+\ze\t/
 
+highlight DiffAdd ctermfg=white ctermbg=darkgrey
+highlight DiffDelete ctermbg=darkcyan
+highlight DiffText ctermfg=grey ctermbg=darkred
+highlight DiffChange ctermfg=white ctermbg=darkmagenta
+
 set listchars=tab:>-,trail:.,extends:>
 set list
 

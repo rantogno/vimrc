@@ -23,6 +23,7 @@ syntax on
 filetype plugin indent on
 set bg=light
 hi Search ctermfg=NONE ctermbg=yellow
+hi Normal ctermfg=black
 " hi! Special ctermfg=217 guifg=Orange
 
 " my default indentation

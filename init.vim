@@ -21,9 +21,9 @@ set mouse=
 " syntax highlight on
 syntax on
 filetype plugin indent on
-set bg=light
-hi Search ctermfg=NONE ctermbg=yellow
-hi Normal ctermfg=black
+set bg=dark
+set termguicolors
+" hi Search ctermfg=NONE ctermbg=grey
 " hi! Special ctermfg=217 guifg=Orange
 
 " my default indentation
@@ -53,10 +53,10 @@ set laststatus=2
 " highlight RedundantSpaces term=standout ctermbg=red guibg=red
 " match RedundantSpaces /\s\+$\| \+\ze\t/
 
-highlight DiffAdd ctermfg=white ctermbg=darkgrey
-highlight DiffDelete ctermbg=darkcyan
-highlight DiffText ctermfg=grey ctermbg=darkred
-highlight DiffChange ctermfg=white ctermbg=darkmagenta
+" highlight DiffAdd ctermfg=white ctermbg=darkgrey
+" highlight DiffDelete ctermbg=darkcyan
+" highlight DiffText ctermfg=grey ctermbg=darkred
+" highlight DiffChange ctermfg=white ctermbg=darkmagenta
 
 set listchars=tab:>-,trail:.,extends:>
 set list
@@ -159,7 +159,7 @@ if has('nvim')
     augroup END
 endif
 
- hi CursorLine cterm=NONE ctermbg=lightgrey guibg=darkred guifg=white
+ hi CursorLine cterm=NONE ctermbg=lightgrey guibg=#202020 guifg=NONE
  set cursorline
 
 set tabline=%!MyTabLine()

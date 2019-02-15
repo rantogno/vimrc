@@ -6,6 +6,18 @@ filetype off
 let mapleader = "\<Space>"
 let g:mapleader = "\<Space>"
 
+" " Copy to clipboard
+vnoremap  <leader>y  "+y
+nnoremap  <leader>Y  "+yg_
+nnoremap  <leader>y  "+y
+nnoremap  <leader>yy  "+y
+
+" " Paste from clipboard
+nnoremap <leader>p "+p
+nnoremap <leader>P "+P
+vnoremap <leader>p "+p
+vnoremap <leader>P "+P
+
 source ~/.config/nvim/myplugins/plug.vim
 
 if has('nvim')

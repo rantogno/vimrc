@@ -37,6 +37,7 @@ Plug 'easymotion/vim-easymotion'
 Plug 'tpope/vim-vinegar'
 
 Plug 'junegunn/gv.vim'
+Plug 'jceb/vim-orgmode'
 
 " All of your Plugins must be added before the following line
 filetype plugin indent on    " required

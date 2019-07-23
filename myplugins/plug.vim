@@ -38,6 +38,7 @@ Plug 'tpope/vim-vinegar'
 
 Plug 'junegunn/gv.vim'
 Plug 'jceb/vim-orgmode'
+Plug 'neoclide/coc.nvim', {'branch': 'release'}
 
 " All of your Plugins must be added before the following line
 filetype plugin indent on    " required

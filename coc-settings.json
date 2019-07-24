@@ -10,5 +10,7 @@
          }
        }
     }
-  }
+  },
+  "coc.source.around.enable": false,
+  "coc.source.buffer.enable": false
 }

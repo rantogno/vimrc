@@ -24,6 +24,7 @@ call plug#begin('~/.config/nvim/plugged')
 " Plug 'bling/vim-airline'
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 Plug 'junegunn/fzf.vim'
+Plug 'jremmen/vim-ripgrep'
 Plug 'embear/vim-localvimrc'
 Plug 'vimwiki/vimwiki'
 Plug 'tpope/vim-fugitive'
@@ -39,6 +40,8 @@ Plug 'tpope/vim-vinegar'
 Plug 'junegunn/gv.vim'
 Plug 'jceb/vim-orgmode'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
+
+Plug 'rickhowe/diffchar.vim'
 
 " All of your Plugins must be added before the following line
 filetype plugin indent on    " required

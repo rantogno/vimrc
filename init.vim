@@ -39,8 +39,8 @@ set termguicolors
 " hi! Special ctermfg=217 guifg=Orange
 
 " my default indentation
-set sw=3 ts=3 sts=3 et
-set cino=(0W1st0
+set sw=2 ts=2 sts=2 et
+set cino=(0W2st0
 set smarttab
 
 set guioptions-=m
@@ -81,23 +81,19 @@ endif
 
 " Remap Alt + Space ==> ESC
 nmap <Space> <Nop>
-inoremap jk <ESC>
-inoremap kj <ESC>
+inoremap <C-q> <ESC>
+nmap <C-q> <Nop>
+" inoremap jk <ESC>
+" inoremap kj <ESC>
 
 " Get efficient with shortcuts, don't need to press <shift> to enter commands
 noremap ; :
 
 " Easy window navigation
-nnoremap <A-h> <C-w>h
-nnoremap <A-j> <C-w>j
-nnoremap <A-k> <C-w>k
-nnoremap <A-l> <C-w>l
-
-" Easy window navigation from insert mode
-inoremap <A-h> <ESC><C-w>h
-inoremap <A-j> <ESC><C-w>j
-inoremap <A-k> <ESC><C-w>k
-inoremap <A-l> <ESC><C-w>l
+nnoremap <C-h> <C-w>h
+nnoremap <C-j> <C-w>j
+nnoremap <C-k> <C-w>k
+nnoremap <C-l> <C-w>l
 
 " Easy window navigation from terminal mode
 if has('nvim')
